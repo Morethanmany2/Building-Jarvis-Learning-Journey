@@ -3,8 +3,12 @@
 void menu(int choice);
 void add_book();
 void view_book();
+void register_member();
+void generate_memberid();
+int check_phone();
 
-
+int nextmemberid = 12345; 
+int len;
 struct book{
         int book_id;
         char book_name[50];
@@ -17,7 +21,7 @@ struct member{
         int member_id;
         char member_name[50];
         char phone[11];
-        int issued;
+        int issued = 0;
     };
     struct member m1;
 
@@ -47,6 +51,7 @@ void menu(int choice){
         break;
 
         case 3:
+        register_member();
         break;
 
         default:
@@ -83,4 +88,49 @@ void view_book()
     else{
         printf("Please enter a valid book id!\n\n");
     }
+}
+
+void register_member(){
+    printf("Enter the name: ");
+    scanf("%s",&m1.member_name);
+    do{
+        printf("Enter phone number: ");
+        scanf("%s",&m1.phone);
+    }while(check_phone());
+    generate_memberid();
+    printf("\n");
+    printf("Member registered succesfully!\n");
+    printf("------*-------*------\n");
+    printf("New Member Details\n");
+    printf("------*-------*------\n");
+    printf("Registered Member id: M%06d", m1.member_id);
+    printf("\n");
+    printf("Registered Member name:%s ", m1.member_name);
+    printf("\n");
+    printf("Registered Mobile Number:%s",m1.phone);
+    printf("\n");
+    printf("No. of issued books:%d",m1.issued);
+    printf("\n");
+    printf("\n"); 
+}
+
+void generate_memberid()
+{
+    m1.member_id = nextmemberid;
+    nextmemberid++;
+}
+
+int check_phone(){
+    len = strlen(m1.phone);
+    for(int i=0;i<len;i++){
+        if(len != 10){
+            printf("Phone number should contain 10 digits!");
+        }
+        return 0;
+        if(m1.phone[i] < '0' || m1.phone[i] > '9'){
+            printf("Phone number should contain digits from 0 to 9!");
+        }
+        return 0;
+    }
+    return 1;
 }
