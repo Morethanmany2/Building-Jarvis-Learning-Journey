@@ -8,7 +8,7 @@ void generate_memberid();
 int check_phone();
 
 int nextmemberid = 12345; 
-int len;
+
 struct book{
         int book_id;
         char book_name[50];
@@ -96,7 +96,7 @@ void register_member(){
     do{
         printf("Enter phone number: ");
         scanf("%s",&m1.phone);
-    }while(check_phone());
+    }while(!check_phone());
     generate_memberid();
     printf("\n");
     printf("Member registered succesfully!\n");
@@ -121,16 +121,19 @@ void generate_memberid()
 }
 
 int check_phone(){
-    len = strlen(m1.phone);
-    for(int i=0;i<len;i++){
+    int len = strlen(m1.phone);
+    
         if(len != 10){
-            printf("Phone number should contain 10 digits!");
+            printf("Phone number should contain 10 digits!\n");
+            return 0;
         }
-        return 0;
+    for(int i=0;i<len;i++){
+        
         if(m1.phone[i] < '0' || m1.phone[i] > '9'){
-            printf("Phone number should contain digits from 0 to 9!");
+            printf("Phone number should contain digits from 0 to 9!\n");
+            return 0;
         }
-        return 0;
+        
     }
     return 1;
 }
