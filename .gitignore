@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Ignore compiled executables
 *.exe
 
@@ -13,3 +14,19 @@ C:\Users\Admin\OneDrive\Desktop\C_programming\cmqkig9j4000304ktdqai5dw1.md
 C:\Users\Admin\OneDrive\Desktop\C_programming\cmqp1k4wr00030bhz9q2z4fgw.md
 C:\Users\Admin\OneDrive\Desktop\C_programming\cmr6omtc700000ajfal7mb7mb.md
 C:\Users\Admin\OneDrive\Desktop\C_programming\cmrj7hog5000009klcvu5e0o8.md
+=======
+# Keil generated files
+**/Objects/
+**/Listings/
+*.bak
+*.uvgui.*
+*.uvguix.*
+*.lnp
+*.iex
+*.htm
+*.dep
+*.crf
+*.d
+*.axf
+*.hex
+>>>>>>> b9f21a7 (microcontrollers)
