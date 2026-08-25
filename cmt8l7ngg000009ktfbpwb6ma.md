@@ -1,9 +1,9 @@
 ---
-title: "From 8051 to STM32: My Next Chapter in Embedded Systems
+title: "Jarvis is dead: My Next Chapter in Embedded Systems
 "
 datePublished: 2026-08-25T11:34:16.220Z
 cuid: cmt8l7ngg000009ktfbpwb6ma
-slug: from-8051-to-stm32-my-next-chapter-in-embedded-systems
+slug: jarvis-is-dead-my-next-chapter-in-embedded-systems
 cover: https://cdn.hashnode.com/uploads/covers/6a2649aba310674fdac6fca6/13872cc8-f58d-4134-948b-f51c10f057a2.png
 
 ---
