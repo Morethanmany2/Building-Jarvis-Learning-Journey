@@ -1,22 +1,53 @@
+# ========================================
 # STM32CubeIDE / Eclipse
+# ========================================
 .settings/
+.metadata/
 Debug/
 Release/
 
-# Build artifacts
+# Eclipse build/config generated files
 *.o
 *.elf
 *.bin
-*.hex
 *.map
 
-# Eclipse metadata
-# Uncomment if you don't want IDE project files in Git
-# .classpath
+# ========================================
+# Keil generated files
+# ========================================
+**/Objects/
+**/Listings/
+*.bak
+*.uvgui.*
+*.uvguix.*
+*.lnp
+*.iex
+*.dep
+*.crf
+*.d
+*.axf
 
+# ========================================
+# VS Code
+# ========================================
+.vscode/
+
+# ========================================
+# Other build folders
+# ========================================
+build/
+bin/
+obj/
+
+# ========================================
+# Executables
+# ========================================
+*.exe
+
+# ========================================
 # OS files
+# ========================================
 .DS_Store
 Thumbs.db
 
-.metadata/
 LED_blinking/
