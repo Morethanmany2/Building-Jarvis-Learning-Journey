@@ -1,0 +1,22 @@
+# STM32CubeIDE / Eclipse
+.settings/
+Debug/
+Release/
+
+# Build artifacts
+*.o
+*.elf
+*.bin
+*.hex
+*.map
+
+# Eclipse metadata
+# Uncomment if you don't want IDE project files in Git
+# .classpath
+
+# OS files
+.DS_Store
+Thumbs.db
+
+.metadata/
+LED_blinking/
